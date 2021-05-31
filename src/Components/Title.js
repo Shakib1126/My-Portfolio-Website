@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
-import ImageSection from './ImageSection';
+
 
 function Title({title, span}) {
     return (
         <Titlestyled>
             <h2>{title} <span>{span}</span></h2>
-            <ImageSection/>
+        
         </Titlestyled>
     )
 }

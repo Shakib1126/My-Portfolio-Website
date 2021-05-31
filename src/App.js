@@ -67,7 +67,7 @@ const MainContentStyled = styled.main`
                 width: 1px;
                 min-height: 100vh;
                 background-color: var(--border-color);
-                opacity: 0.6;
+                opacity: 0.3;
             }
         }
     

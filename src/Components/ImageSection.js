@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
-import resume from "./../img/shakib1.jpg";
+import resume from "./../img/resume1.jpg";
+import PrimaryButton from './PrimaryButton';
 
 function ImageSection() {
     return (
@@ -24,15 +25,15 @@ function ImageSection() {
                         <p>Service</p>
                     </div>
                     <div className="info">
-                        <p>: Lorem Ipsum</p>
-                        <p>: 36</p>
-                        <p>: Spainsh </p>
-                        <p>: Spanish, French, English </p>
-                        <p>: London, United Kingdom</p>
+                        <p>: Shakib Badarpura</p>
+                        <p>: 23</p>
+                        <p>: Indian </p>
+                        <p>: English, Hindi, Gujarati </p>
+                        <p>: Mumbai, India</p>
                         <p>: Freelance</p>
                     </div>
                 </div>
-                {/* <PrimaryButton title={'Download Cv'} /> */}
+                <PrimaryButton title={'Download Cv'} />
             </div>
             
         </ImageSectionstyled>
@@ -46,6 +47,7 @@ margin-top: 5rem;
     .left-content{
         width: 100%;
         
+        
         img{
             width: 95%;
             object-fit: cover;
@@ -55,16 +57,16 @@ margin-top: 5rem;
         width: 100%;
         padding-left: 1.5rem;
         h4{
-            font-size: 2rem;
+            font-size: 1.7rem;
             color: var(--white-color);
             span{
-                font-size: 2rem;
+                font-size: 1.7rem;
                 color: var(--primary-color);
             }
         }
         .paragraph{
             padding: 1rem 0;
-            
+            font-size: 1.1rem;
         }
         .about-info{
             display: flex;
