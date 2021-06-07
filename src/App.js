@@ -3,10 +3,10 @@ import Sidebar from "./Components/Sidebar";
 import styled from "styled-components";
 import HomePage from "./Pages/Homepage";
 import About from "./Pages/About";
-import Resume from "./Pages/Resume";
+import ResumePage from "./Pages/ResumePage";
 import Portfolio from "./Pages/Portfolio";
 import Blog from "./Pages/Blog";
-import Contact from "./Pages/Contact";
+import Contact from "./Pages/ContactPage";
 import { Route, Switch } from "react-router";
 
 function App() {
@@ -33,7 +33,7 @@ function App() {
             <About />
           </Route>
           <Route path="/resume" exact>
-            <Resume />
+            <ResumePage />
           </Route>
           <Route path="/portfolios" exact>
             <Portfolio />
@@ -58,10 +58,11 @@ const MainContentStyled = styled.main`
 
     .lines{
             position: absolute;
-            min-height: 100vh;
+            min-height: 100%;
             width: 100%;
             display: flex;
             justify-content: space-evenly;
+            z-index: -1;
 
             .line-1, .line-2, .line-3, .line-4{
                 width: 1px;
